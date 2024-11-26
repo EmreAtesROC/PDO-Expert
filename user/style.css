@@ -1,0 +1,64 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    height: 50px;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+
+.logo img {
+    height: 60px;
+    position: relative;
+    left: -60px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+}
+
+.login {
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.register {
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.login:hover {
+    background-color: green;
+    font-weight: bold;
+}
+
+.register:hover {
+    background-color: red;
+    font-weight: bold;
+}
+
+.middenscherm h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.middenscherm p {
+    display: flex;
+    justify-content: center;
+}

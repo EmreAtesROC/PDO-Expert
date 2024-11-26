@@ -9,6 +9,13 @@ if (isset($_POST['logout'])) {
     exit();
 }
 
+
+if (!isset($_SESSION['email'])) {
+    header('Location: login-user.php');
+    exit();
+}
+
+
 ?>
 
 <!DOCTYPE html>
@@ -17,11 +24,20 @@ if (isset($_POST['logout'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard user</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
-<button type="button" class="btn btn-danger" name="logout">Uitloggen</button>
+<header class="header">
+        <div class="logo">
+        <a href="hoofdpagina.html"><img src="pdologo.png" alt="PDO Logo"></a>        </div>
+        <nav class="nav-links">
+        <form method="POST">
+            <button class="register" name="logout">Uitloggen</button>
+        </form>
+    </nav>
+</header>
 
 
 
