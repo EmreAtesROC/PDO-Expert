@@ -15,7 +15,6 @@ if (!isset($_SESSION['email'])) {
     exit();
 }
 
-
 ?>
 
 <!DOCTYPE html>
@@ -33,14 +32,15 @@ if (!isset($_SESSION['email'])) {
         <div class="logo">
         <a href="hoofdpagina.html"><img src="pdologo.png" alt="PDO Logo"></a>        </div>
         <nav class="nav-links">
+        <a class="navknop" href="..\product\product-insert.php">Product toevoegen</a>
+        <a class="navknop" href="..\product\product-view.php">Producten</a>
         <form method="POST">
             <button class="register" name="logout">Uitloggen</button>
         </form>
     </nav>
 </header>
 
-
-
+<h1>Welkom</h1>
     
 </body>
 </html>

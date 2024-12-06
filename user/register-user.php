@@ -54,5 +54,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <input type="submit" name="submit" value="Registreren">
 </form>
 </div>
+</div>
 </body>
 </html>

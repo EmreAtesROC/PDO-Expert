@@ -19,4 +19,5 @@ Class User {
         return $this->pdo->run("SELECT * FROM users WHERE email = :email", ["email"=>$email])->fetch();
     }
 }
+$db = new User();
 ?>

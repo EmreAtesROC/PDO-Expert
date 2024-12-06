@@ -12,7 +12,7 @@ class Database {
         }
     }
 
-    public function run($sql, $placeholders) {
+    public function run($sql, $placeholders = null) {
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute($placeholders);
         return $stmt;

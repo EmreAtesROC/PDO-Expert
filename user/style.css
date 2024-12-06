@@ -62,3 +62,11 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.navknop {
+    color: black;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 5px;
+}
